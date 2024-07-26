@@ -1,0 +1,201 @@
+<!-- 5. build a clone of the IRCTC Ticket booking page. -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>IRCTC Clone</title> 
+</head> 
+<link rel="stylesheet" href="styless.css"> 
+<style> 
+    #container{ 
+        display: flex; 
+        width: 100vw; 
+        height: 100vh;    
+    } 
+
+    #right{ 
+        width: 100%; 
+    } 
+
+    #left{ 
+        width: 100%; 
+    } 
+
+    #leftNav{ 
+        display: flex; 
+        justify-content: center; 
+        width: 50%; 
+    } 
+
+    #RightNav{ 
+        display: flex; 
+        justify-content: space-between; 
+        width: 50%;       
+    } 
+
+    #navbar{ 
+        display: flex; 
+    } 
+
+    button{ 
+        border: 0;    
+    } 
+
+    table{ 
+        border-spacing: 10px; 
+    } 
+
+    #h1Tag{ 
+        display: flex; 
+        flex-direction: column; 
+    } 
+    
+    #charts{ 
+        border: 1px solid rgb(185, 174, 174); 
+        border-radius: 2px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 40px; width: 150px; 
+    } 
+     
+</style> 
+<body> 
+    <div id="container"> 
+        <div id="left"> 
+            <div id="navbar"> 
+                <div id="leftNav"> 
+                    <img src="IRCTC-Color (1).svg" style="width: 30px; "> 
+                    <img src="images/cdnlogo.com_indian-railways.svg " style="width: 40px;"> 
+                </div> 
+                <div id="RightNav"> 
+                    <table> 
+                        <tr > 
+                            <td>Ask Disha</td> 
+                            <td>Contact us</td> 
+                            <td> Alerts</td> 
+                        </tr> 
+                        <tr> 
+                            <td><button style="background-color: orange; 
+                            border-radius:2px ;">Login</button></td> 
+                            <td><Button style="border: 1px solid rgb(172, 165, 165); 
+                             border-radius:2px ;">Register</Button></td> 
+                            <td><button style="border: 1px solid rgb(172, 165, 165); 
+                             border-radius:2px ;" >Agent Login</button></td> 
+                        </tr> 
+                    </table> 
+                </div> 
+            </div> 
+            <div id="h1Tag"> 
+                <h2 style="margin: 0px; margin-left:74px; margin-top: 50px;">lndian Railways</h2> 
+                <div style="display: flex; gap: 10px; margin-left: 74px; margin-top: 0px;"><p style="color: green;">Safety</p><p style="color: orange;">Security</p><p style="color: blueviolet;">Punctuality</p></div> 
+            </div> 
+            <div style="display: flex; gap: 10px; margin-bottom: 50px;  margin-top: 50px; margin-left: 74px;"> 
+                <div style="background-color: rgb(29, 29, 99); color: white;" id="charts"><img  src="images/icons8-ticket-24.png" alt=""> Book Ticket</div> 
+                <div style="font-weight: bold; color: rgb(22, 22, 88);" id="charts">✔️ PNR Status</div> 
+                <div id="charts" style="font-weight: bold; color: rgb(29, 29, 99) ;"><img src="images/icons8-bar-chart-34 (1).png" alt=""> Charts/vacancy</div> 
+            </div> 
+            <div id="main"> 
+             
+                <div id="Trains"> 
+                    <div id="SearchTrain"> 
+                        <div id="PlaceAndTimings"> 
+                            <div id="PlaceFrom" > 
+                                <table> 
+                                    <tr> 
+                                        <td><img src="images/icons8-train-50 (1).png" style="width: 30px;"></td> 
+                                        <td> 
+                                            <ul> 
+                                                <li style="font-size: 13px;">From <img style="width: 12px;" src="images/icons8-down-12.png" alt=""> </li> 
+                                                <li style="font-weight: bold;">Bangalore</li> 
+                                                <li style="font-size: x-small;">K8R - Bangalore</li> 
+                                            </ul>   
+                                        </td> 
+                                    </tr> 
+                                </table> 
+                            </div> 
+                            <div id="swapLogo"> 
+                                <img src="images/icons8-swap-64.png" style="width: 26px;"> 
+                            </div> 
+                            <div id="PlaceTo"> 
+                                <table> 
+                                    <tr> 
+                                        <td><img src="images/icons8-train-50 (1).png" style="width: 30px;"></td> 
+                                        <td> 
+                                            <ul> 
+                                                <li style="font-size: 13px;">To <img style="width: 12px;" src="images/icons8-down-12.png" alt=""></li> 
+                                                <li style="font-weight: bold;">Kasaragod</li> 
+                                                <li style="font-size: x-small;">K8R - Kasaragod</li> 
+                                            </ul> 
+                                            
+                                        </td> 
+                                    </tr> 
+                                </table> 
+                            </div> 
+                        </div>     
+                    </div> 
+                    <div id="SearchTrain"> 
+                        <div id="PlaceAndTimings"> 
+                            <div id="PlaceFrom" > 
+                                <table> 
+                                    <tr> 
+                                        <td><img src="images/icons8-calander-64.png" style="width: 30px;"></td> 
+                                        <td> 
+                                            <ul> 
+                                                <li style="font-size: 13px;">Date <img style="width: 12px;" src="images/icons8-down-12.png" alt=""> </li> 
+                                                <li style="font-weight: bold;">01 Aug 23</li> 
+                                                <li style="font-size: x-small;">Tuesday</li> 
+                                            </ul>    
+                                        </td> 
+                                    </tr> 
+                                </table> 
+                            </div> 
+                            <div id="swapLogo"> 
+                                <table> 
+                                    <tr> 
+                                        <td><img src="images/icons8-circle-64.png" style="width: 30px;"></td> 
+                                        <td> 
+                                            <ul> 
+                                                <li style="font-size: 13px;">Class <img style="width: 12px;" src="images/icons8-down-12.png" alt=""> </li> 
+                                                <li style="font-weight: bold;">3A</li> 
+                                                <li style="font-size: x-small;">AC 3 Tier</li> 
+                                            </ul> 
+                                            
+                                        </td> 
+                                    </tr> 
+                                </table> 
+                            </div> 
+                            <div id="PlaceTo"> 
+                                <table> 
+                                    <tr> 
+                                        <td><img src="images/icons8-boxes-32.png" style="width: 30px;"></td> 
+                                        <td> 
+                                            <ul> 
+                                                <li style="font-size: 13px;">Seat Type <img style="width: 12px;" src="images/icons8-down-12.png" alt=""></li> 
+                                                <li style="font-weight: bold;">Tatkal</li> 
+                                                <li style="font-size: x-small;">AC 3 Tier</li> 
+                                            </ul> 
+                                            
+                                        </td> 
+                                    </tr> 
+                                </table> 
+                            </div> 
+                        </div>    
+                    </div> 
+                </div> 
+            <div id="button"> 
+                <p style="font-weight:200;">Search Train </p> 
+                <img src="images/icons8-arrow-30.png" style="width: 18px;"> 
+            </div>      
+            </div>     
+           </div> 
+       <div id="right"> 
+            <div style="width: 50%; height: 50%;"><img style="width: 100%; height: 100%"  src="images/train.jpeg"></div> 
+            <div style="width: 50%; height: 50%;"><img style="width: 100%; height: 100%" src="images/Train2.jpeg" ></div> 
+        </div> 
+       </div> 
+    </div>    
+</body> 
+</html>

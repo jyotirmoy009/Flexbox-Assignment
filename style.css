@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    background-color: #fdfcfd;
+}
+
+.pricing-items{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pricing-item{
+    background-color: #eef2f7;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 8px #0e2a4d; 
+}
+
+.pricing-item2{
+    background-color: #0e2a4d;
+    color: white;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.pricing-item h3{
+    color: #0e2a4d;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.pricing-item2 h3{
+    color: #fafbfc;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.pricingItem_price{
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+.pricingItem_price2{
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+.pricingItem_price .dollar{
+    font-size: 2rem;
+    color: #0e2a4d;
+}
+
+.pricingItem_price2 .dollar1{
+    font-size: 2rem;
+}
+
+.pricingItem_info{
+    list-style: none;
+    color: #0e2a4d;
+    padding-bottom: 2rem;
+}
+.pricingItem_info2{
+    list-style: none;
+    color: #f8f4f4;
+    padding-bottom: 2rem;
+}
+.pricingItem_info li{
+    margin-bottom: 0.3rem;
+}
+
+.pricingItem_info2 li{
+    margin-bottom: 0.3rem;
+}
+
+.pricing-item button{
+
+    background-color: #0e2a4d;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+}
+.pricing-item2 button{
+
+    background-color: rgb(244, 244, 253);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #0e2a4d;
+}
+@media (max-width: 768px){
+    .pricing-items{
+
+        flex-direction: column;
+    }
+    .pricing-top h1{
+        margin: 0;
+    }
+    .pricing-top p{
+        margin: 0;
+        margin-top: 1rem;
+    }
+}

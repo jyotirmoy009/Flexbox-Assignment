@@ -1,0 +1,73 @@
+<!-- 5. build a clone of the IRCTC Ticket booking page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="images01.jpg">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="IRCTC Logo">
+            <h1>Indian Railways</h1>
+            <p>Safety Security Punctuality</p>
+        </div>
+        <div class="header-right">
+            <a href="#">Ask Disha</a>
+            <a href="#">Contact us</a>
+            <a href="#">Alerts</a>
+            <button>Login</button>
+            <button>Register</button>
+            <button>Agent Login</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="booking-section">
+            <div class="tab-buttons">
+                <button>BOOK Ticket</button>
+                <button>PNR Status</button>
+                <button>Charts/Vacancy</button>
+            </div>
+            <div class="form-section">
+                <div class="form-field">
+                    <label for="from">From</label>
+                    <input type="text" id="from" placeholder="Bangalore">
+                </div>
+                <div class="form-field">
+                    <label for="to">To</label>
+                    <input type="text" id="to" placeholder="Kasaragod">
+                </div>
+                <div class="form-field">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-field">
+                    <label for="class">Class</label>
+                    <select id="class">
+                        <option>3A</option>
+                        <option>2A</option>
+                        <option>SL</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="seat">Seat Type</label>
+                    <select id="seat">
+                        <option>TATKAL</option>
+                        <option>GENERAL</option>
+                    </select>
+                </div>
+                <button class="search-button">Search Train</button>
+            </div>
+        </div>
+        <div class="images-section">
+            <img src="" alt="Train Image 1">
+            <img src="" alt="Train Image 2">
+        </div>
+    </main>
+</body>
+</html>
